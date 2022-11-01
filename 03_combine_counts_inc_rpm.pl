@@ -2,8 +2,8 @@
 use strict;
 
 
-open OUT, '>AS_combined_raw_counts.txt' or die;
-open OUTR, '>AS_combined_RPM_counts.txt' or die;
+open OUT, '>NAME_combined_raw_counts.txt' or die;
+open OUTR, '>NAME_combined_RPM_counts.txt' or die;
 
 
 my%gene;

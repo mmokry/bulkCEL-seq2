@@ -24,10 +24,8 @@ while (<BC>){
     system ("./bwa aln -B 0 -q 0 -n 0.04 -k 2 -l 200 -t 6 HG19_genes.fa $name.R2.fastq > $name.R2.sai");
     system ("./bwa sampe -n 100 -N 100 HG19_genes.fa $name.R1.sai $name.R2.sai $name.R1.fastq $name.R2.fastq > $name.sam");
     system (" perl 02_parse_sam_cell_seq.pl $name.sam ");
-
- 
-
-
-
     }
 
+system("rm *.all");
+system("rm *.sam");
+system("gzip -v *.fastq");
