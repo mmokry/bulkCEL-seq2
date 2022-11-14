@@ -30,8 +30,7 @@ while (<IN>){
     next if ($r[11]=~m/t/);
     next if ($r[11]=~m/g/);
     next if ($r[11]=~m/N/);
-#    next if ($r[11]=~m/n/);
-#    next if ($r[11]=~m/n/);
+
 
 
 
